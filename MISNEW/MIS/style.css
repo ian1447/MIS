@@ -1,0 +1,972 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+li {
+    font-size: 2.5vw;
+    float: left;
+    padding-top: 1.2vw;
+    padding-right: 2vw;
+}
+
+/*for index.php*/
+/*class*/
+.index {
+    background: url(img/background_color.jpg);
+    width: 100%;
+    height: 95vh;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+.welcome_text {
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    font-family: Fantasy;
+    padding-top: 25vw;
+    line-height:22px;
+}
+.index_login_container{
+    text-align: center;
+    padding-top: 10vw;
+}
+.header_text {
+    float: right;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 2vw;
+    padding-top: 1vw;
+    line-height:22px;
+    padding-left: 3vw;
+}
+.index_img{
+    float: left;
+    padding-left: 10px;
+    padding-top: 5px;
+}   
+/*id*/
+#index_login{
+    font-size: 30px;
+    background-color: orange;
+    border-radius: 24px;
+    padding: 5px 65px;
+    border: none; 
+    transition-duration: 0.4s;
+    color: white;
+}
+#index_login:hover{
+    background-color: #EAEDED ;
+    color: black;
+}
+
+/*for login.php*/
+/*class*/
+.loginpage{
+    background-color: #FDEBD0;
+    width: 100%;
+    height: 95vh;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+.loginform{
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30vw;
+    height: auto;
+    transform: translate(-50%, -50%);
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 5px 5px 3px orange;
+    padding: 10px;
+    border-radius: 25px;
+}
+.loginerror {
+    background: #F2DEDE;
+    color: #0c0101;
+    padding: 1vw;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+.loginlabel{
+    font-size: 2vw;
+    padding-left: 1vw;
+}
+.logindiv{
+    padding-left: 2vw;
+    padding-top: 1vw;
+}
+.loginerrordiv{
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.loginselectdiv{
+    text-align: center;
+    padding-top: 2vw;
+}
+/*id*/
+#username{
+    padding-left: 10px;
+    text-align: left;
+    font-size: 2vw;
+    width: 26vw;
+    border-color: orange;
+    border-radius: 24px;
+}
+#password{
+    padding-left: 10px;
+    text-align: left;
+    font-size: 2vw;
+    width: 26vw;
+    border-color: orange;
+    border-radius: 24px;
+}
+#privilege{
+    font-size: 2vw;
+    width: 250px;
+    border-color: orange;
+    text-align: center;
+}
+#loginbtn{
+    font-size: 2vw;
+    background-color: orange;
+    border-radius: 24px;
+    padding: 5px 65px;
+    border: none; 
+    transition-duration: 0.4s;
+    color: white;
+}
+#loginbtn:hover{
+    background-color: #EAEDED ;
+    color: black;
+    border: 2px solid black;
+}
+
+
+/*for main.php*/
+/*class*/
+.main_top{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.main_picture{
+    background: url(img/background_color.jpg);
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+.main_white{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3vw;
+}
+.main_white_label{
+    font-size: 3vw;
+    padding-left: 3vw;
+    padding-top: 2vw;
+    color: orange;
+    font-weight: bold;
+}
+.main_post{
+    height: 10vw;
+}
+.text_container{
+    padding-top: 2vw;
+    padding-left: 5vw;
+}
+.button_container{
+    float: right;
+    padding-top: 2vw;
+    padding-right: 4vw;
+}
+.card_container {
+    width: 94.55vw;
+    height: 30vw;
+    padding-top: 2vw;
+    padding-left: 4vw;
+}
+.seeall_container {
+    width: 53vw;
+    height: 5vw;
+    padding-left: 45vw;
+    padding-top: 2vw;
+}
+.main_scroll_container{
+    padding-top: 1vw;
+    padding-left: 10vw;
+    width: 85vw;
+    height: 20w;
+}
+.main_scroll{
+    background-color: orange;
+    color: white;
+    width: 80vw;
+    height: 20vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    font-size: 3vw;
+    padding-left: 2vw;
+}
+/*id*/
+#main_welcome {
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    font-family: Fantasy;
+    padding-top: 15%;
+    line-height:22px;
+    padding-left: 10px;
+}
+#new_post {
+    resize: none;
+    float: left;
+    column-span: 5;
+    font-size: 2vw;
+    width: 75vw;
+    height: 8vw;
+    border-radius:65px;
+    padding-left: 2vw;
+}
+#postbtn{
+    font-size: 2vw;
+    background-color: orange;
+    border-radius: 100px;
+    padding: 1vw 2vw;
+    border: none; 
+    transition-duration: 0.4s;
+    color: white;
+}
+#postbtn:hover{
+    background-color: #EAEDED ;
+    color: black;
+    border: 2px solid black;
+}
+#seeallbtn{
+    font-size: 2vw;
+    background-color: orange;
+    border-radius: 100px;
+    padding: 1vw 2vw;
+    border: none; 
+    transition-duration: 0.4s;
+    color: white;
+}
+#seeallbtn:hover{
+    background-color: #EAEDED ;
+    color: black;
+    border: 2px solid black;
+}
+
+/*for alumni*/
+.alumni_container{
+    width: 93vw;
+    min-height: 30vw;
+    height: auto;
+    overflow: hidden;
+    padding-top: 2vw;
+    padding-left: 5vw;
+    padding-bottom: 2vw;
+}
+.single_alumni_container{
+    float: left;
+    width:26vw;
+    height: 25vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    box-shadow: 0 4px 8px 0 orange;
+    transition: 0.3s;
+}
+.alumni_container h2{
+    text-align: center;
+}
+.alumni_container p{
+    text-align: center;
+}
+.single_alumni_container:hover{
+    box-shadow: 0 8px 16px 0 black;
+}
+.add_alumni_container{
+    clear:both;
+    text-align: center;
+    padding-bottom: 3vw;
+}
+
+/*for chat*/
+.cardh_chat{
+    width: 70vw;
+    height: 5vw;
+    padding:0vw 3vw 2vw 3vw;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 orange;
+    transition: 0.3s;
+}
+.cardh_chat p{
+    padding-top: 2vw;
+    padding-left: 7vw;
+    font-size: 2vw;
+}
+.cardh_chat:hover {
+    box-shadow: 1px 8px 16px 1px black;
+}
+.cardh {
+    width: 70vw;
+    height: 2vw;
+    padding:3vw 3vw 2vw 3vw;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 orange;
+    transition: 0.3s;
+}
+.cardh p{
+    font-size: 2vw;
+}
+.cardh:hover {
+    box-shadow: 1px 8px 16px 1px black;
+}
+.cardh_container {
+    padding-top: 8vw;
+    padding-left: 15vw;
+    padding-bottom: 5vw;
+    width: 80vw;
+    min-height: 35vw;
+    height: auto;
+}
+.cardh_container_report {
+    padding-top: 3vw;
+    padding-left: 15vw;
+    padding-bottom: 5vw;
+    width: 80vw;
+    min-height: 35vw;
+    height: auto;
+}
+.cardh_report {
+    width: 70vw;
+    height: 4vw;
+    padding:1vw 1vw 2vw 3vw;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 orange;
+    transition: 0.3s;
+}
+.cardh_report p{
+    font-size: 2vw;
+}
+.cardh_report:hover {
+    box-shadow: 1px 8px 16px 1px black;
+}
+
+/*for news_activities*/
+.news_label_container {
+    width: 100%;
+    height: 3vw;
+}
+.news_label_container p {
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 1vw;
+    color: orange;
+}
+.cardh_news{
+    width: 70vw;
+    height: 8vw;
+    padding:0vw 3vw 2vw 3vw;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 orange;
+    transition: 0.3s;
+}
+.cardh_news p{
+    float: left;
+    text-align: left;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    font-size: 2vw;
+}
+.cardh_news:hover {
+    box-shadow: 1px 8px 16px 1px black;
+}
+.cardh_news_container {
+    padding-top: 2vw;
+    padding-left: 15vw;
+    padding-bottom: 5vw;
+    width: 80vw;
+    min-height: 35vw;
+    height: auto;
+}
+.responsive_news{
+    float: left;
+    padding-top: 0.5vw;
+    width: 15vw;
+    height: auto;
+}
+
+/*for gallery*/
+.gallery_label_container {
+    width: 100%;
+    height: 3vw;
+}
+.gallery_label_container p {
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 1vw;
+    color: orange;
+}
+.cardh_gallery_container{
+    padding-top: 2vw;
+    padding-left: 15vw;
+    padding-bottom: 5vw;
+    width: 80vw;
+    min-height: 35vw;
+    height: auto;
+}
+
+/*for showgallery*/
+.showgallery_container{
+    padding-top: 2vw;
+    padding-left: 15vw;
+    padding-bottom: 5vw;
+    width: 80vw;
+    min-height: 35vw;
+    height: auto;
+}
+.showgallery_container div{
+    float: left;
+    width:20vw;
+    height: 15vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    box-shadow: 0 4px 8px 0 orange;
+    transition: 0.3s;
+}
+.responsive_gallery{
+    float: left;
+    padding-top: 0.5vw;
+    width: 15vw;
+    height: auto;
+    max-height:9vw;
+}
+.album_header{
+    text-align: center;
+    padding-top: 0.5vw;
+    font-size: 2vw;
+    color: orange;
+}
+
+/*for add*/
+.first_label_add{
+    font-size: 2vw;
+    color: orange;
+    padding-right: 1vw;
+}
+.add_container{
+    padding-top: 1vw;
+    padding-left: 10vw;
+    padding-bottom: 3vw;
+    width: 85vw;
+    min-height: 35vw;
+    height: auto;
+}
+.add_label{
+    padding-left: 1vw;
+    width: 80vw;
+}
+.add_label p{
+    color: orange;
+    font-size: 2vw;
+    text-align: center;
+}
+.add_form{
+    padding-left: 1vw;
+    width: 80vw;
+    height: 35vw;
+}
+.add_form input{
+    float: left;
+    font-size: 2vw;
+    width: 50vw;
+    height: 2vw;
+    border-radius:50px;
+    padding-left: 2vw;
+
+}
+.add_form div{
+    width: 80vw;
+    height: 10vw;
+}
+.add_form div p{
+    float: left;
+    font-size: 2vw;
+    color: orange;
+    padding-right: 1vw;
+}
+.add_form textarea{
+    resize: none;
+    float: left;
+    column-span: 5;
+    font-size: 2vw;
+    width: 70vw;
+    height: 8vw;
+    border-radius:50px;
+    padding-left: 2vw;
+}
+.add_alumni_form{
+    padding-top: 1vw;
+    padding-left: 1vw;
+    width: 80vw;
+    height: 35vw;
+}
+.add_alumni_form div{
+    padding-top: 1vw;
+    float: left;
+    padding-left: 2vw;
+}
+.add_alumni_form div p{
+    font-size: 2vw;
+    color: orange;
+    padding-right: 1vw;
+}
+.add_alumni_common_inp{
+    padding-left: 1vw;
+    font-size: 2vw;
+    color: orange;
+    border-radius:50px;
+    width: 35vw;
+}
+.date_container{
+    width: 80vw;
+    height: 10vw;
+    padding-top: 3vw;
+}
+.date_container p{
+    float: left;
+    font-size: 2vw;
+    color: orange;
+}
+.date_container input{
+    float: left;
+    font-size: 2vw;
+    width: 15vw;
+    height: 2vw;
+    border-radius:50px;
+}
+.add_btn_container{
+    width: 80vw;
+    height: 7vw;
+    text-align: center;
+    padding-top: 3vw;
+}
+.add_btn_container button{
+    font-size: 2vw;
+    background-color: orange;
+    border-radius: 100px;
+    padding: 1vw 2vw;
+    border: none;
+    transition-duration: 0.4s;
+    color: white;
+}
+.add_btn_container button:hover{
+    background-color: #EAEDED ;
+    color: black;
+    border: 2px solid black;
+}
+.add_course_div{
+    padding-top: 2vw;
+}
+.choose_form p{
+    font-size: 2vw;
+    color: orange;
+}
+.choose_form input{
+    font-size: 1vw;
+}
+
+/*for add buttons*/
+.admin_add_container{
+    width: 53vw;
+    height: 5vw;
+    padding-left: 30vw;
+    padding-top: 2vw;
+}
+
+/*for alumni picture*/
+.alumni_picture_container{
+    width: 80vw;
+    height: auto;
+    padding-top: 1vw;
+}
+
+/*class for reuse*/
+.topframe {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:1.5vw;
+    background:orange;
+}
+.responsive{
+    padding-top: .3vw;
+    padding-left: .5vw;
+    width: 4.5%;
+    height: auto;
+    float:left;
+}
+.responsive_chat{
+    float: left;
+    padding-top: 0.5vw;
+    width:9%;
+    height: auto;
+}
+.responsive_dropdown{
+    padding-top: 1vw;
+    padding-left: 1vw;
+    width: 8vw;
+    height: 8vw;
+}
+.footer{
+    background-color: orange;
+    position: absolute;
+    height: 7vw;
+    width: 100%;
+}
+.main_header{
+    background-color: white;
+    width: 100%;
+    height: 5vw;
+    box-shadow: 0 .8vw 2px -2px gray;
+}
+.white_background{
+    background-color: white;
+    width: 100%;
+    height: 20vw;
+
+}
+
+
+
+/*id for footer and navbar*/
+#footer_text{
+    text-align: center;
+    color: white;
+    font-weight:100;
+    font-size: 1.5vw;
+    padding-top: 0.8vw;
+}
+#main_header_text {
+    float: left;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 1vw;
+    padding-top: 0.7vw;
+    line-height:22px;
+    padding-left: 1.5vw;
+}
+/*for dropdown*/
+/* Dropdown Button */
+.dropbtn {
+    color: blue;
+    font-size: 2.5vw;
+    padding-top: 1.2vw;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    float: right;
+    font-size: 1vw;
+    width: 10vw;
+    padding-top: 0.1vw;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 5vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content p{
+    text-align: center;
+    padding-top: .5vw;
+    font-size: 1.3vw;
+}
+
+/* Links inside the dropdown */   
+.dropdown-content a {
+    width: 9vw;
+    color: black;
+    font-size: 1.5vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* for big cards */
+.card {
+    float: left;
+    width: 24vw;
+    height: 25vw;
+    padding:3vw 3vw 2vw 3vw;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 orange;
+    transition: 0.3s;
+}
+.card p{
+    font-size: 2vw;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 black;
+}
+
+/* for searchbox */
+.searchbox {  
+    float: left;  
+    padding-left: 14vw;
+    padding-top: 2vw;
+    border-radius: 24px;
+    width: 75vw;
+}  
+#search_text {  
+    border-radius: 24px;
+    padding: 3px;  
+    width: 60vw;
+    padding-left: 2vw;
+    font-size: 2vw;  
+    border: 2px solid orange;
+}  
+.searchbox button {  
+    float: right;
+    font-size: 2vw;
+    background-color: orange;
+    border-radius: 24px;
+    padding: 3px 20px;
+    border: none; 
+    transition-duration: 0.4s;
+    color: white;
+}  
+.searchbox button:hover {  
+    background-color: #EAEDED ;
+    color: black;
+    border: 1px solid black; 
+}  
+/*
+#loginbtn{
+    font-size: 30px;
+    background-color: orange;
+    border-radius: 24px;
+    padding: 5px 65px;
+    border: none; 
+    transition-duration: 0.4s;
+    color: white;
+}
+#loginbtn:hover{
+    background-color: #EAEDED ;
+    color: black;
+    border: 2px solid black;
+}
+
+//lahi
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/*for class*/
+
+
+/*for Settings account codes*/
+.box1{
+
+    width: 98vw;
+    height: 34vw;
+    padding-top: 4.2vw;
+    padding-left: 2vw;
+}
+
+.topframe {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:1.5vw;
+    background:orange;
+}
+
+.settings{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-left: 15px;
+    font-size: 25px;
+    position: absolute;
+    width: 100vw;
+    height: 10vw;
+    border: 2px solid orange;
+}
+
+
+
+.footer{
+    background-color: orange;
+    position: absolute;
+    height: 7vw;
+    width: 100%;
+}
+#footer_text{
+    text-align: center;
+    color: white;
+    font-weight:100;
+    font-size: 1.5vw;
+    padding-top: 0.8vw;
+}
+
+
+/* for settings about code */
+.boxall
+{
+    width: 97.9vw;
+    height: 36vw;
+    padding-top: 4.2vw;
+    padding-left: 2vw;
+}
+
+.box2
+{
+    width: 20vw;
+    position: absolute;
+    float: left;
+    margin-left: 5vw;
+    padding-right: 7vw;
+    height: 33vw;
+}
+
+.box3
+{
+    width: 20vw;
+    position: absolute;
+    float: left;
+    margin-left: 32.1vw;
+    padding-right: 7vw;
+    height: 33vw;
+}
+.box4
+{
+    width: 20vw;
+    position: absolute;
+    float: left;
+    margin-left:58.9vw ;
+    padding-right: 7vw;
+    height: 33vw;
+}
+
+.Visionn{
+    padding-left: 2vw;
+    height: 5vw;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Vission_text {
+    font-weight: 100;
+    width: 21vw;
+    font-size: 1.50vw;
+    text-align: center;
+    padding-left: 5vw;
+}
+
+.Misionn{
+    padding-left: 5vw;
+    height: 5vw;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Mission_text {
+    font-weight: 100;
+    width: 21vw;
+    font-size: 1.50vw;
+    text-align: center;
+    padding-left: 5vw;
+}
+
+.Goalss{
+    height: 5vw;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Goalss_text {
+    font-weight: 100;
+    width: 21vw;
+    font-size: 1.50vw;
+    text-align: center;
+    padding-left: 5vw;
+}
+
+/* CODING FOR SETTINGS SETTINGS */
+.normaldiv{
+    width: 20vw;
+    height: 3vw;
+    font-size: 2vw;
+}
+
+/* Organization Chart */
+
+  
+  /* FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-footer {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .page-footer a {
+    margin-left: 4px;
+  }
+
